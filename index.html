@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MBTI 검사</title>
+</head>
+<body>
+    <div class="container">
+        <h1>MBTI 검사</h1>
+        <form id="mbti-form">
+            <div class="question">
+                <p>1. 사람들과의 대화에서 에너지를 얻는 편인가요?</p>
+                <label><input type="radio" name="question_0" value="A"> 네, 사람들과 이야기하는 게 좋아요.</label><br>
+                <label><input type="radio" name="question_0" value="B"> 아니요, 혼자 있는 게 더 좋아요.</label>
+            </div>
+            <div class="question">
+                <p>2. 현실적인 것보다 상상하는 것을 더 선호하나요?</p>
+                <label><input type="radio" name="question_1" value="A"> 아니요, 현실이 더 중요해요.</label><br>
+                <label><input type="radio" name="question_1" value="B"> 네, 상상하는 게 좋아요.</label>
+            </div>
+            <div class="question">
+                <p>3. 결정을 내릴 때 감정보다 논리를 더 중요시하나요?</p>
+                <label><input type="radio" name="question_2" value="A"> 네, 저는 논리를 중시해요.</label><br>
+                <label><input type="radio" name="question_2" value="B"> 아니요, 감정이 더 중요하다고 생각해요.</label>
+            </div>
+            <div class="question">
+                <p>4. 계획을 세우고 그에 따라 행동하는 편인가요?</p>
+                <label><input type="radio" name="question_3" value="A"> 네, 계획이 필요해요.</label><br>
+                <label><input type="radio" name="question_3" value="B"> 아니요, 즉흥적으로 하는 게 더 좋아요.</label>
+            </div>
+            <button type="submit">제출</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
